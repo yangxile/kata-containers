@@ -246,7 +246,7 @@ $ cd $GOPATH/src/github.com/kata-containers/kata-containers/tools/osbuilder
 ```
 
 ## Create a rootfs image
-### Create a local rootfs
+### Create a local rootfs folder
 
 As a prerequisite, you need to install Docker. Otherwise, you will not be
 able to run the `rootfs.sh` script with `USE_DOCKER=true` as expected in
@@ -320,7 +320,7 @@ $ (cd /usr/share/kata-containers && sudo ln -sf "$image" kata-containers.img)
 ```
 
 ## Create an initrd image - OPTIONAL
-### Create a local rootfs for initrd image
+### Create a local rootfs folder for initrd image
 ```
 $ export ROOTFS_DIR="${GOPATH}/src/github.com/kata-containers/kata-containers/tools/osbuilder/rootfs-builder/rootfs"
 $ sudo rm -rf ${ROOTFS_DIR}
